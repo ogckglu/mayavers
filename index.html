@@ -6,7 +6,7 @@
 
 <title>Maya Vers</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,7 +20,7 @@ font-family:'Montserrat',sans-serif;
 body{
 background:#000;
 color:white;
-text-align:left;
+overflow-x:hidden;
 }
 
 .hero{
@@ -29,70 +29,85 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:flex-start;
-padding-left:8%;
+padding-left:6%;
 position:relative;
+
 background:
 linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.75)
+90deg,
+rgba(0,0,0,.82) 0%,
+rgba(0,0,0,.55) 35%,
+rgba(0,0,0,.25) 100%
 ),
 url('maya-hero.png');
+
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 }
 
 h1{
-font-size:7rem;
-letter-spacing:6px;
+font-size:5.5rem;
 font-weight:800;
+letter-spacing:4px;
 text-transform:uppercase;
-text-shadow:0 0 25px rgba(0,0,0,.8);
-line-height:1;
+line-height:.95;
+max-width:700px;
+text-shadow:0 10px 30px rgba(0,0,0,.7);
 }
 
 p{
-margin-top:15px;
-font-size:1.1rem;
-color:#d0d0d0;
-letter-spacing:1px;
+margin-top:18px;
+font-size:1.05rem;
+font-weight:300;
+color:#d8d8d8;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
 .links{
 display:flex;
 flex-direction:column;
-gap:18px;
-margin-top:35px;
+gap:16px;
+margin-top:40px;
 }
 
 .links a{
 display:flex;
 justify-content:center;
 align-items:center;
-width:280px;
-height:60px;
+
+width:240px;
+height:56px;
+
 text-decoration:none;
-background:rgba(15,15,15,.85);
-backdrop-filter:blur(10px);
 color:white;
-border-radius:16px;
+
+background:rgba(15,15,15,.82);
+backdrop-filter:blur(12px);
+
 border:1px solid rgba(255,255,255,.08);
-transition:.3s;
+border-radius:14px;
+
+font-size:.95rem;
 font-weight:600;
-font-size:1rem;
+letter-spacing:.5px;
+
+transition:.3s ease;
 }
 
 .links a:hover{
-transform:translateX(8px);
-background:rgba(35,35,35,.95);
+transform:translateX(6px);
+background:rgba(40,40,40,.95);
+border:1px solid rgba(255,255,255,.18);
 }
 
 footer{
 padding:30px;
 text-align:center;
+background:#000;
 color:#777;
 font-size:.9rem;
-background:#000;
 }
 
 @media(max-width:768px){
@@ -100,15 +115,28 @@ background:#000;
 .hero{
 padding-left:25px;
 padding-right:25px;
+background-position:65% center;
 }
 
 h1{
-font-size:4rem;
-letter-spacing:3px;
+font-size:3.4rem;
+letter-spacing:2px;
+max-width:100%;
+}
+
+p{
+font-size:.9rem;
+letter-spacing:1px;
+}
+
+.links{
+width:100%;
 }
 
 .links a{
-width:240px;
+width:100%;
+max-width:260px;
+height:54px;
 }
 
 }
@@ -122,7 +150,7 @@ width:240px;
 
 <h1>MAYA VERS</h1>
 
-<p>Turkish & Persian Artist</p>
+<p>Independent Turkish & Persian Artist</p>
 
 <div class="links">
 
